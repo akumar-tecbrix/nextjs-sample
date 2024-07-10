@@ -1,0 +1,9 @@
+runtime: python39
+handlers:
+  - url: /_next/static
+    static_dir: out/_next/static
+
+  - url: /(.*)
+    static_files: out/\1
+    upload: out/(.*)
+
